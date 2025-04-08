@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    background: #161513;
+    color: white;
+    font-family: "outfit";
+}
+
+  .navbar img {
+    height: 25vh;
+    cursor: pointer;
+  }
+  .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 170px;
+  
+   
+  }
+  .nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    font-size: 20px;
+    cursor: pointer;
+    
+  }
+  
+.nav-menu li {
+  position: relative;
+  cursor: pointer;
+  padding-bottom: 5px; 
+}
+
+.nav-menu p {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+
+.nav-menu img {
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+ 
+  .nav-connect{
+    padding: 20px 30px;
+    /* margin-right: 2rem;
+    padding-right: 30px; */
+    border-radius: 50px;
+    background: linear-gradient(267deg,#DA7C25 0.36%,#B923E1 102.06%);
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .nav-connect:hover{  
+    transform: scale(1.05);
+  }
+ .anchor-link{
+  text-decoration: none;
+  color: white;
+ }
+ .menu-icon {
+  display: none;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  z-index: 1100; /* Ensures it's clickable */
+}
+/* Mobile Styles */
+@media (max-width: 768px) {
+  /* Adjust Navbar */
+  .navbar {
+      margin: 0;
+      padding: 10px 20px;
+      width: 100%;
+  }
+
+  /* Show Hamburger Menu */
+  .menu-icon {
+      display: block;
+      width: 35px;
+      height: 35px;
+      z-index: 1100;
+  }
+
+  /* Mobile Menu */
+  .nav-menu {
+      position: fixed;
+      top: 0;
+      right: -100%; /* Hide menu by default */
+      width: 70%;
+      height: 100vh;
+      background-color: #1F0016;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      justify-content: center;
+      transition: right 0.5s ease-in-out;
+      z-index: 999;
+  }
+
+  /* When Menu is Open */
+  .nav-menu.open {
+      right: 0; /* Slide in */
+  }
+
+  /* Hide Connect Button on Mobile */
+  .nav-connect {
+      display: none;
+  }
+
+  /* Adjust List Items */
+  .nav-menu li {
+      font-size: 24px;
+      text-align: center;
+  }
+}
