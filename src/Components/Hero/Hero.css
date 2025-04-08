@@ -80,28 +80,47 @@
  
   border: 2px solid #B415FF;
 }
-@media (max-width:768px) {
-  .hero img{
-    margin-top: 30px;
+@media (max-width: 768px) {
+  .hero {
+    padding: 30px 15px;
   }
-  .hero p{
-    
-    font-size: 18px;
-    line-height: 32px;
-    margin: 10px 0px;
+
+  .hero img {
+    width: 120px;
+    height: 120px;
+    margin-top: 20px;
   }
-  .hero-action{
+
+  .hero h1 {
+    font-size: 32px;
+    margin-top: 12px;
+  }
+
+  .hero h1 span {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    line-height: 28px;
+    margin: 12px 0;
+    padding: 0 10px;
+  }
+
+  .hero-action {
+    flex-direction: column;
     gap: 16px;
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    width: 100%;
+    align-items: center;
   }
-  .hero-connect{
-    padding: 20px 30px;
+
+  .hero-connect,
+  .hero-resume {
+    width: 80%;
+    padding: 16px 24px;
     border-radius: 40px;
-  }
-  .hero-resume{
-    padding: 20px 50px;
-    border-radius: 40px;
+    font-size: 16px;
+    text-align: center;
   }
 }
