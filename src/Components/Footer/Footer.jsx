@@ -8,8 +8,10 @@ const Footer = () => {
     <div  className="footer">
       <div className="footer-top">
         <div className="footer-left">
+          <div className="footer-brand">
           <img src={logo} alt="" />
           <p>I'm a Full Stack Devoloper</p>
+        </div>
         </div>
       </div>
       <hr />
@@ -17,11 +19,7 @@ const Footer = () => {
         <p className="footer-bottom-left">
           © 2025 Disha Dubey. All rights reserved.
         </p>
-        <div className="footer-bottom-right">
-          <p>Term of Services</p>
-          <p>Privacy Policy</p>
-          <p>Connect with me</p>
-        </div>
+       
       </div>
     </div>
   );

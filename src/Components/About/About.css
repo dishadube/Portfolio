@@ -4,8 +4,9 @@
     align-items: center;
     justify-content: center;
     gap: 80px;
-    margin: 80px 170px;
+    margin: 80px 160px;
    /* width: 100%; */
+   /* background-color: red; */
 }
 
  .about-title {
@@ -88,6 +89,8 @@
     margin: 40px 20px;
     gap: 60px;
     align-items: center;
+ 
+    width: 100%;
   }
 
   .about-title h1 {
