@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.css";
 import theme_pattern from "../../assets/theme_pattern.svg";
-import profile_img from "../../assets/about_profile_img.png";
+import profile_img from "../../assets/profile_img.png";
 
 const About = () => {
   return (
@@ -18,7 +18,7 @@ const About = () => {
           <div className="about-para">
             <p>
               I am a passionate full stack developer with a strong foundation in
-              both front-end and back-end technologies.{" "}
+              both front-end and back-end technologies.
             </p>
             <p>
               With expertise in React, Node.js, and various databases, I have
@@ -29,7 +29,7 @@ const About = () => {
               eager to learn new technologies to enhance her skill set.
             </p>
           </div>
-          <div className="about-skills">
+          {/* <div className="about-skills">
             <div className="about-skill">
               <p>HTML & CSS</p> <hr style={{ width: "50%" }} />{" "}
             </div>
@@ -41,11 +41,11 @@ const About = () => {
             </div>
             <div className="about-skill">
               <p>BootStrap</p> <hr style={{ width: "70%" }} />{" "}
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
-    </div>
+    // </div>
   );
 };
 

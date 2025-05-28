@@ -5,18 +5,20 @@
   justify-content: center;
   text-align: center;
   padding: 40px 20px;
- width: 103%;
+  width: 100%;
+
+
 
 }
 
 .hero img {
-  width: 150px; 
-  height: 150px;
-  border-radius: 50%; 
+  width: 160px;
+  height: 160px;
   object-fit: cover;
-  border: 1px solid white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease-in-out;
+  border-radius: 50%;
+  border: 3px solid black;
+  box-shadow: 0 4px 15px white;
+  margin-bottom: 30px;
 }
 
 .hero img:hover {
@@ -84,7 +86,7 @@
 @media (max-width: 768px) {
   .hero {
     margin: 30px 15px;
-    width: 100%;
+    width: 80%;
     height: auto;
     display: flex;
     flex-direction: column;

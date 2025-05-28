@@ -13,14 +13,14 @@ const Footer = () => {
           <p>I'm a Full Stack Devoloper</p>
         </div>
         </div>
-      </div>
-      <hr />
-      <div className="footer-bottom">
+          <div className="footer-bottom">
         <p className="footer-bottom-left">
           © 2025 Disha Dubey. All rights reserved.
         </p>
        
       </div>
+      </div>
+    
     </div>
   );
 };
