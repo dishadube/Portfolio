@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <div id="home" className="navbar">
-      {/* <img src={logo} alt="Logo" className="logo" /> */}
+      <img src={logo} alt="Logo" className="logo" />
       <img
         src={isOpen ? menu_close : menu_open}
         alt="Menu Toggle"
