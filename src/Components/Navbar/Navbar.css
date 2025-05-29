@@ -19,6 +19,7 @@ body {
   justify-content: space-between;
   margin: 20px 170px;
   width: 80%;
+  background-color: white;
 }
 .nav-menu {
   display: flex;
