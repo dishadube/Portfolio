@@ -10,6 +10,7 @@ import Skills from './Components/Skills/Skills'
 
 
 
+
 const App = () => {
   return (
     <>

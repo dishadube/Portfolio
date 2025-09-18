@@ -12,22 +12,22 @@ const Skills = () => {
         <img src={theme_pattern} alt="" />
       </div>
       <div className="services-container">
-        {Services_Data.map((service, index) => {
+        {Skills_Data.map((skills, index) => {
           return (
             <div key={index} className="services-format">
-              <h3>{service.s_no}</h3>
+              <h3>{skills.s_no}</h3>
               <div
                 style={{ display: "flex", alignItems: "center", gap: "10px" }}
               >
                 <img
-                  src={service.s_icon}
-                  alt={service.s_name}
+                  src={skills.s_icon}
+                  alt={skills.s_name}
                   style={{ width: "30px", height: "30px" }}
-                   className={`skill-icon icon-${service.s_name.toLowerCase()}`}
+                   className={`skill-icon icon-${skills.s_name.toLowerCase()}`}
                 />
-                <h2>{service.s_name}</h2>
+                <h2>{skills.s_name}</h2>
               </div>
-              <p>{service.s_desc}</p>
+              <p>{skills.s_desc}</p>
               <div className="services-readmore">
                 <p>Read More</p>
                 <img src={arrow_icon} alt="" />
