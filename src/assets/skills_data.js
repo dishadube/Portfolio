@@ -5,7 +5,7 @@ import react_icon from "../assets/react_icon.png";
 import php_icon from "../assets/php_icon.png";
 import bootstrap_icon from "../assets/bootstrap_icon.png";
 
-const Services_Data = [
+const Skills_Data = [
     {
         s_no: "01",
         s_name: "HTML",
@@ -44,4 +44,4 @@ const Services_Data = [
     }
 ];
 
-export default Services_Data;
+export default Skills_Data;

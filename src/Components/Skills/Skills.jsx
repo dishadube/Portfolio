@@ -1,7 +1,7 @@
 import React from "react";
 import "./Skills.css";
 import theme_pattern from "../../assets/theme_pattern.svg";
-import Services_Data from "../../assets/skills_data";
+import Skills_Data from "../../assets/skills_data";
 import arrow_icon from "../../assets/arrow_icon.svg";
 
 const Skills = () => {
