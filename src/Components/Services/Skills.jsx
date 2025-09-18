@@ -1,10 +1,10 @@
 import React from "react";
-import "./Services.css";
+import "./Skills.css";
 import theme_pattern from "../../assets/theme_pattern.svg";
-import Services_Data from "../../assets/services_data";
+import Services_Data from "../../assets/skills_data";
 import arrow_icon from "../../assets/arrow_icon.svg";
 
-const Services = () => {
+const Skills = () => {
   return (
     <div id="services" className="services">
       <div className="services-title">
@@ -40,4 +40,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Skills;

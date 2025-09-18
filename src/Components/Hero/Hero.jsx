@@ -8,7 +8,8 @@ const Hero = () => {
     <div id="home" className="hero">
       <img src={hero_image} alt="" />
       <h1>
-        <span>I'm Disha Dubey </span>,a Full Stack Devoloper
+        <span>I'm Disha Dubey</span> ,
+        <span className="full-stack-developer">Full Stack Developer</span>
       </h1>
       <p>
         I am a skilled Full Stack Developer with expertise in designing and

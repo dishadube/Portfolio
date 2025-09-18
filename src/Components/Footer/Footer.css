@@ -1,79 +1,175 @@
 /* Footer.css */
 
 .footer {
-  background-color: #1e1e1e;
-  color: #fff;
-  padding: 40px 20px 20px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  width: 100%;
- 
-  height: calc(100% - 100px);
-  
+  background-color: black; /* Main background color */
+  color: #6c757d; /* Muted text color */
+  padding: 30px 20px; /* Vertical and horizontal padding */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+  display: flex;
+  flex-direction: column; /* Stack top and bottom sections vertically */
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  text-align: center; /* Center text within the footer */
+  /* border-top: 1px solid #e0e0e0;  <-- REMOVED THIS LINE */
+  margin-top: auto; /* Pushes footer to the bottom if content is short */
 }
 
 .footer-top {
+  width: 100%;
+  max-width: 1200px; /* Max width for content */
   display: flex;
-  flex-direction: column;
+  justify-content: space-between; /* Space out left and right sections */
   align-items: center;
-  justify-content: center;
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+  margin-bottom: 20px; /* Space below the top section */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 .footer-left {
   display: flex;
-  justify-content: center;
-  width: 100%;
+  align-items: center;
 }
 
 .footer-brand {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  text-align: center;
+  gap: 10px; /* Space between logo and text */
 }
 
 .footer-brand img {
-  height: 50px;
-  margin-bottom: 10px;
+  height: 20%; /* Adjust logo size */
+  width: 20%;
 }
 
 .footer-brand p {
-  font-size: 16px;
-  color: #ccc;
   margin: 0;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #ffffff; /* Changed to white to stand out on black background */
+}
+
+/* You can add a footer-right section here if needed, for example, for navigation links */
+.footer-right {
+  display: flex;
+  gap: 20px; /* Space between navigation links */
+}
+
+.footer-right a {
+  color: #6c757d;
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.3s ease;
+}
+
+.footer-right a:hover {
+  color: #007bff; /* Highlight color on hover */
 }
 
 .footer-bottom {
   width: 100%;
-  border-top: 1px solid #444;
-  margin-top: 20px;
-  padding-top: 10px;
-  text-align: center;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between; /* Space out copyright and social icons */
+  align-items: center;
+  /* border-top: 1px solid #dee2e6; <-- REMOVED THIS LINE */
+  padding-top: 20px; /* Padding above the bottom section */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  gap: 15px; /* Space between elements when they wrap */
 }
 
 .footer-bottom-left {
-  font-size: 14px;
-  color: #888;
+  margin: 0;
+  font-size: 0.9em;
+  color: #adb5bd; /* Slightly lighter copyright text */
 }
 
-/* Responsive Styles */
-@media (min-width: 768px) {
+.footer-social-icons {
+  display: flex;
+  gap: 15px; /* Space between social icons */
+}
+
+.footer-social-icons a {
+  color: #6c757d; /* Default icon color */
+  text-decoration: none;
+  font-size: 1.5em; /* Make icons slightly larger */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+/* Specific colors for social media icons */
+.footer-social-icons a[href*="github.com"] {
+  color: white; /* GitHub dark grey */
+}
+.footer-social-icons a[href*="linkedin.com"] {
+  color: #0077b5; /* LinkedIn blue */
+}
+.footer-social-icons a[href*="wa.me"] {
+  color: #25D366; /* WhatsApp green */
+}
+.footer-social-icons a[href*="instagram.com"] {
+  color: #E1306C; /* Instagram pink/red gradient */
+}
+
+.footer-social-icons a:hover {
+  transform: scale(1.1); /* Slight enlarge on hover */
+}
+
+/* Specific hover colors for social media icons */
+.footer-social-icons a[href*="github.com"]:hover {
+  color: white; /* Darker grey on hover */
+}
+.footer-social-icons a[href*="linkedin.com"]:hover {
+  color: #005f8b; /* Darker blue on hover */
+}
+.footer-social-icons a[href*="wa.me"]:hover {
+  color: #128C7E; /* Darker green on hover */
+}
+.footer-social-icons a[href*="instagram.com"]:hover {
+  color: #d5005e; /* Darker pink/red on hover */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+
 
   .footer-top {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    text-align: left;
+    flex-direction: column; /* Stack sections vertically on medium screens */
+    gap: 20px;
   }
 
-  .footer-left {
-    justify-content: flex-start;
+  .footer-left,
+  .footer-right {
+    width: 100%;
+    justify-content: center; /* Center content when stacked */
   }
 
   .footer-brand {
-    align-items: flex-start;
-    text-align: left;
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column; /* Stack copyright and icons vertically on medium screens */
+    gap: 20px;
+  }
+
+  .footer-social-icons {
+    justify-content: center; /* Center social icons when stacked */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-brand img {
+    height: 35px;
+  }
+
+  .footer-brand p {
+    font-size: 1em;
+  }
+
+  .footer-social-icons a {
+    font-size: 1.3em; /* Slightly smaller icons on small screens */
+  }
+
+  .footer-bottom-left {
+    font-size: 0.8em;
   }
 }

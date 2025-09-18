@@ -1,114 +1,140 @@
-/* MyWork.css */
+/* ============================ */
+/* Base Styles */
+/* ============================ */
 
 .mywork {
-  padding: 60px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #222;
- 
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff; 
+    margin-bottom: 30px;
 }
 
+/* MyWork Title Section */
 .mywork-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  margin-bottom: 40px;
-  flex-wrap: wrap;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    height: 50px;
 }
 
 .mywork-title h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin: 0;
-  color: white;
+    font-size: 46px;
+    font-weight: 700;
+    margin: 0;
+    z-index: 2;
 }
 
 .mywork-title img {
-  height: 40px;
-  user-select: none;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+   
 }
 
+/* MyWork Container */
 .mywork-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
 }
 
 .mywork-container img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
 .mywork-container img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
+/* Show More Button */
 .mywork-showmore {
-  margin-top: 40px;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 1.1rem;
-  color: #007bff;
-  user-select: none;
-  transition: color 0.3s ease;
-  justify-content: center;
+    margin-top: 40px;
+    text-align: center;
+    width: 100%;
+}
+
+.mywork-showmore p {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #007bff;
+    user-select: none;
+    transition: color 0.3s ease;
 }
 
 .mywork-showmore img {
-  height: 18px;
-  transition: transform 0.3s ease;
+    height: 18px;
+    transition: transform 0.3s ease;
 }
 
-.mywork-showmore:hover {
-  color: #0056b3;
+.mywork-showmore p:hover {
+    color: #0056b3;
 }
 
-.mywork-showmore:hover img {
-  transform: translateX(5px);
+.mywork-showmore p:hover img {
+    transform: translateX(5px);
 }
 
+/* ============================ */
 /* Responsive Adjustments */
+/* ============================ */
 
 @media (max-width: 768px) {
-  .mywork-container img {
-    height: 180px;
-  }
-
-  .mywork-title h1 {
-    font-size: 2rem;
-  }
+    .mywork-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    
+    .mywork-container img {
+        height: 180px;
+    }
+    
+    .mywork-title h1 {
+        font-size: 2rem;
+    }
 }
 
 @media (max-width: 480px) {
-   .mywork {
-    padding: 40px 15px;
-    width: 80%;
-  }
-  .mywork-container {
-    grid-template-columns: 1fr;
-  }
-
-  .mywork-container img {
-    height: 160px;
-  }
-
-  .mywork-title {
-    justify-content: center;
-    gap: 10px;
-  }
-
-  /* .mywork-title img {
-    height: 30px;
-  } */
+    .mywork {
+        padding: 40px 15px;
+    }
+    
+    .mywork-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .mywork-container img {
+        height: 160px;
+    }
+    
+    .mywork-title {
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .mywork-title img {
+        height: 30px;
+    }
 }

@@ -1,9 +1,9 @@
 import html_icon from "../assets/html_icon.svg";
 import css_icon from "../assets/css_icon.svg";
 import js_icon from "../assets/js_icon.svg";
-import react_icon from "../assets/react_icon.svg";
-import php_icon from "../assets/php_icon.svg";
-import bootstrap_icon from "../assets/bootstrap_icon.svg";
+import react_icon from "../assets/react_icon.png";
+import php_icon from "../assets/php_icon.png";
+import bootstrap_icon from "../assets/bootstrap_icon.png";
 
 const Services_Data = [
     {
